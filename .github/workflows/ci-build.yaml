@@ -49,5 +49,6 @@ jobs:
       - name: Run unit tests with pytest
         env:
           DATABASE_URI: postgresql://postgres:postgres@localhost:5432/postgres
+          FLASK_TESTING: "true"
         run: |
           python -m pytest -v
